@@ -14,7 +14,7 @@
 ___Update System Packages and Install SCRIPT___
 
 ```
-apt-get update -y; apt-get upgrade -y; rm hehe*; wget https://raw.githubusercontent.com/OfficialOnePesewa1990/Official-OnePesewa-VPS-Manager/main/setup; chmod 777 setup;./setup
+apt-get update -y; apt-get upgrade -y; rm hehe*; wget https://raw.githubusercontent.com/OfficialOnePesewa1990/Official-OnePesewa-VPS-Manager/main/VPSmanager; chmod 777 VPSmanager;./VPSmanager
 
 ```
 
