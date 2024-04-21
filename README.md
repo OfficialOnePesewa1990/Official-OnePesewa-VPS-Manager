@@ -1,6 +1,5 @@
 ## ◇────── 🇬🇭 Official OnePesewa VPS Manager 🇬🇭 ───────◇
 <p style="text-align: center;">Official OnePesewa VPS Manager is a powerful yet user-friendly tool designed to streamline the management of Virtual Private Servers (VPS). Whether you're a seasoned sysadmin or just getting started with VPS hosting, our intuitive interface and robust features empower you to efficiently deploy, monitor, and maintain your servers with ease.</p>
-    <h2 style="text-align: center;">&nbsp;</h2>
     <hr>
     <h3 style="text-align: center;">Key Features:</h3>
     <ul style="list-style-type: none;">
