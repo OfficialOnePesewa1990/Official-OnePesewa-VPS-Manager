@@ -2,14 +2,21 @@
 clear
 [[ "$(whoami)" != "root" ]] && {
     echo -e "\033[1;33m[\033[1;31mError\033[1;33m] \033[1;37m- \033[1;33m◇ YOU NEED TO RUN AS ROOT!\033[0m"
-    rm $HOME/setup > /dev/null 2>&1; exit 0
+    rm $HOME/setup > /dev/null 2>&1
+    exit 0
 }
 
 select_vps_manager(){
-    echo -e "\033[1;36mWELCOME TO \033[1;33mOFFICIAL ONEPESEWA VPS MANAGER\033[0m"
-    echo -e "\n\033[1;33mSELECT VPS TO INSTALL\033[0m"
-    echo "[\033[1;32m1\033[0m] \033[1;36mSSH VPS MANAGER\033[0m    [\033[1;32m2\033[0m] \033[1;36mSOCKSIP UDP SERVER\033[0m    [\033[1;32m3\033[0m] \033[1;36mBOTH\033[0m"
-    read -p "Enter your choice: " choice
+    echo -e "\033[1;32m       ============================================================   \033[0m"
+    echo -e "                  \033[1;34m WELCOME TO OFFICIAL ONEPESEWA VPS MANAGER \033[0m"
+    echo -e "\033[1;32m       ============================================================   \033[0m"
+    echo ""
+    echo -e "\033[1;35m                      SELECT VPS TO INSTALL                            \033[0m"
+    echo -e "\033[1;36m                     ------------------------  \033[0m"
+    echo ""
+    echo -e "        [\033[1;32m1\033[0m] \033[1;36mSSH VPS MANAGER\033[0m    [\033[1;32m2\033[0m] \033[1;36mSOCKSIP UDP SERVER\033[0m    [\033[1;32m3\033[0m] \033[1;36mBOTH\033[0m"
+    echo ""
+    read -p $'\033[1;33m        Choose between [1] - [3]: \033[0m' choice
     case $choice in
         1)
             echo -e "\n\033[1;32mInstalling SSH SERVER ...\033[0m"
@@ -41,6 +48,7 @@ select_vps_manager(){
             ./UDPserver.sh
             ;;
         *)
+            clear            
             echo -e "\n\033[1;31mInvalid choice. Please try again.\033[0m"
             select_vps_manager
             ;;
